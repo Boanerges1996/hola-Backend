@@ -1,0 +1,39 @@
+{
+  "name": "hola",
+  "version": "1.0.0",
+  "description": "Simple backend for a minimized chat application. Almost like slack Minified",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boanerges1996/hola-Backend.git"
+  },
+  "keywords": [
+    "nodemon",
+    "mongoose",
+    "socket.io",
+    "webrtc",
+    "express"
+  ],
+  "author": "Samson Kwaku Nkrumah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boanerges1996/hola-Backend/issues"
+  },
+  "homepage": "https://github.com/Boanerges1996/hola-Backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.16",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.3"
+  }
+}

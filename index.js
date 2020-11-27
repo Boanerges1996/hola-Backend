@@ -11,6 +11,7 @@ const dbServer = require("./connections/dbConnection");
 
 // Various routes
 const User = require("./routes/user");
+const FriendRequests = require("./routes/friendRequest");
 
 dotenv.config();
 
@@ -42,6 +43,7 @@ require("./connections/socketConnection")(io);
 // });
 
 app.use("/user", User);
+app.use("/friend/request", FriendRequests);
 
 const port = process.env.PORT || 3000;
 server.listen(port, () => {

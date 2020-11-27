@@ -26,8 +26,8 @@ const UserModel = new mongoose.Schema(
       type: String,
       default:
         process.env.ENVIRON === "production"
-          ? `${url[1]}\\images\\avatar.png`
-          : `${url[0]}\\images\\avatar.png`,
+          ? `${url[1]}/images/avatar.png`
+          : `${url[0]}/images/avatar.png`,
     },
   },
   { timestamps: true }

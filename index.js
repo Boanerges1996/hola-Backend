@@ -41,6 +41,8 @@ require("./connections/socketConnection")(io);
 //   });
 // });
 
+app.use("/user", User);
+
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Listening on Port ${port}`);
